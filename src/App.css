@@ -1,38 +1,70 @@
-.App {
+#conteudo{
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(45deg, rgb(78,89,190), rgb(255,255,255));
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+img{
+  width: 75px;
+  vertical-align: middle;
+  margin: 25px;
+}
+
+h1{
+  display: inline-block;
   text-align: center;
+  vertical-align: middle;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.painelDados{
+  margin: 25px;
+  background-color: white;
+  display: inline-flex;
+  width: 30%;
+  padding: 15px;
+  border-radius: 15px;  
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.painelControle{
+  text-align: center;
+  align-self: center;
+  padding: 10px;
+  background-color: rgb(78,89,190);
+  width: 75%;
+  border-radius: 15px;
+  margin: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.painelControle p{
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mais{
+  border: solid 1px white;
+  padding: 0 20px;
+  border-radius: 5px 0 0 5px;
+  align-content: center;
+}
+
+.menos{
+  border: solid 1px white;
+  padding: 0 20px;
+  border-radius: 0 5px 5px 0;
+  align-content: center;
+}
+
+.quantidade{
+  border: solid 1px white;
+  padding: 0 25px;
+  align-content: center;
+}
+
+.botao:hover{
+  background-color: blueviolet;
+  cursor: pointer;
 }
